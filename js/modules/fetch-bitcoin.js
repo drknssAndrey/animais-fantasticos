@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 export default function fetchBitcoin(url, target) {
   fetch(url).then((response) => {
+=======
+export default function initFetchBitcoin() {
+  console.log("TESTE");
+  fetch("https://blockchain.info/ticker").then((response) => {
+>>>>>>> master
     response
       .json()
       .then((bitcoin) => {
